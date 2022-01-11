@@ -10,6 +10,12 @@ $(document).keypress(function() {
   }
 });
 
+$("h1").click(function() {
+  if(level === 0) {
+    nextSequence();
+  }
+});
+
 function nextSequence() {
   userClickedPattern = [];
   started = 0;
